@@ -1,0 +1,178 @@
+body{
+    background-image: url(Images/ShazamB.JPG);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.header{
+    position:relative;
+    overflow: hidden;
+    animation-name: Slidedown 3s;
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+    opacity: 0.7;
+    
+    
+}
+aside img{
+    max-width: 200px;
+    max-height: 300px;
+    animation: Slideleft 3s;
+    animation-direction: alternate;
+    box-shadow: 0px 0px 20px white;
+    float: left;
+}
+nav a{
+    background-color: rgba(4, 80, 107, 0);
+    display: inline-block;
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 1.5em;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+nav a:hover{
+    background-color: rgba(255, 255, 255, 0.14);
+    
+}
+nav ul{
+    list-style: none;
+    text-align: center;
+}
+section{
+    padding: 20px;
+    max-width: 40%;
+    float: left;
+}
+.section h2{
+    font-size: 1.5em;
+}
+.section .p1{
+    font-size: 1em;
+}
+.section .p2{
+    font-size: 1em;
+    font-style: italic;
+}
+article{
+    padding: 20px;
+    max-width: 80%;
+    
+    display: block;
+}
+.article .h3{
+    font-size: 1.5em;
+}
+.article .p3{
+    font-size: 1em;
+}
+.article .p4{
+    font-size: 1em;
+    font-style: italic;
+}
+.h4{
+    max-width: 100%;
+    text-align: center;
+}
+.p5{
+    max-width: 100%;
+    text-align: center;
+}
+.Gallery{
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    width: 300px;
+}
+.Gallery .Description{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+.Gallery:hover{
+    box-shadow: 0px 0px 30px rgba(6, 179, 242, 0.471);
+}
+.Gallery img{
+    width: 100%;
+}
+.Icons{
+    text-align: center;
+}
+.Icons a{
+    text-decoration: none;
+    margin-right: 50px;
+}
+.fa-solid.fa-book.fa-5x{
+    color: rgb(0, 0, 255);
+    opacity: 0.6;
+}
+.fa-solid.fa-book.fa-5x:hover{
+    opacity: 1;
+}
+.fa-regular.fa-note-sticky.fa-5x{
+    color: rgb(0, 0, 255);
+    opacity: 0.6;
+}
+.fa-regular.fa-note-sticky.fa-5x:hover{
+    opacity: 1;
+}
+.fa-duotone.fa-solid.fa-note-sticky.fa-5x{
+    color: rgb(0, 0, 255);
+    opacity: 0.6;
+}
+.fa-duotone.fa-solid.fa-note-sticky.fa-5x:hover{
+    opacity: 1;
+}
+.Icons ul li{
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+}
+.Icons a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer h3,h4{
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    .article{
+        width: 100%;
+    }
+    .container{
+        flex-flow: column;
+    }
+    
+}
+@keyframes Slideleft{
+    from{transform: translateX(800px);}
+}
+@keyframes Slidedown{
+    from{transform: translateY(400px);}
+    
+}
+@keyframes Fadein{
+    100%{opacity: 1;}
+}
+@keyframes Glow {
+    50%{box-shadow: 0px 0px 10px;}
+}
